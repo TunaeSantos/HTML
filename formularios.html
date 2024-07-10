@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Formularios</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!--Tag (form) Tag para inserir formulários -->
+    <form>
+        <!--Tag (input) Tag para inserir campos do formulário com diversos tipos-->
+        <input type="text" placeholder="Nome"/>
+        <hr/>
+        <!--Tag (label) Tag para inserir o que esperamos no formulário-->
+        <label for="email">Seu e-mail</label>
+        <input id="email" type="email"/>
+        <hr/>
+        <label for="number">Seu Telefone</label>
+        <input id="number" type="number" max="10" min="0" step="2"/> <!--Tag (label) Tag com opções de max e min e com especialidade-->
+        <hr/>
+        <!--Tag input com (password) Tipo para inserir senha-->
+        <label>Insira sua senha:</label>
+        <input type="password">
+        <hr/>
+
+        <!--Tag com (file) Tipo para anexar arquivos-->
+        <input type="file">
+        <hr/>
+        <!--Tag input com (checkbox) Tipo para selecionar opções-->
+        <input type="checkbox" id="termos"> <label for="termos">Aceito os Termos</label>
+        <hr/>
+        <h3>Qual sua cor favorita?</h3>
+        <input type="radio" name="favorita" id="vermelho"><label for="vermelho">Vermelho</label>
+        <input type="radio" name="favorita" id="verde"><label for="verde">Verde</label>
+        <input type="radio" name="favorita" id="azul"><label for="azul">Azul</label>
+        <hr/>
+
+        <label>Qual seu filme favorito?</label>
+        <select>
+            <option>O vingador</option>
+            <option>Jhon Wick</option>
+            <option>Os Mercenários</option>
+            <option>47 Ronins</option>
+        </select>
+        <hr/>
+            <textarea></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
